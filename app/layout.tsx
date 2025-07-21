@@ -11,7 +11,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "МАКУЛАТУРА | НАКЛЕЙКИ",
+  title: {
+    default: "МАКУЛАТУРА | НАКЛЕЙКИ",
+    template: "%s | МАКУЛАТУРА ",
+  },
   description: "Самый лучший магазин наклеек",
 };
 
