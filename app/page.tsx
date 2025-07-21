@@ -16,11 +16,13 @@ export default function Home() {
         <Button size="l">
           <DiAndroid />
         </Button>
-        <Button size="m" round>
-          <DiAndroid />
+        <Button size="sm">Meню</Button>
+        <Button variant="secondary" size="m">
+          Закрыть
         </Button>
-        <Button variant="secondary" size="sm">
-          <DiAndroid />
+
+        <Button variant="secondary" size="l">
+          Закрыть
         </Button>
 
         <section className={`${styles.main__section} ${styles.main__section_intro}`}>

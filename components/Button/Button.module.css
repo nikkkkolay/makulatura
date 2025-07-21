@@ -8,6 +8,7 @@
 	border-radius: 1em;
 	padding: .6em .8em;
 	border: none;
+	transition: all .3s ease;
 }
 
 .round {
@@ -32,13 +33,17 @@
 	color: var(--black);
 }
 
-.primary:hover {
-	background-color: var(--button-hover-backgroung-light);
-}
-
 .secondary {
 	background-color: var(--green-300);
 	color: var(--black);
+}
+
+.button:hover {
+	transform: translateY(0.125em);
+}
+
+.primary:hover {
+	background-color: var(--button-hover-backgroung-light);
 }
 
 .secondary:hover {
