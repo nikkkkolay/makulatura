@@ -1,14 +1,17 @@
 :root {
   --background: #e6f1e4;
-  --greenLight: #e6f1e4;
-  --green200: #dbe6d9;
-  --green250: #cfdacd;
-  --green300: #b1b9af;
-  --greenDark: #001f08;
+  --green-light: #e6f1e4;
+  --green-200: #dbe6d9;
+  --green-250: #cfdacd;
+  --green-300: #b1b9af;
+  --green-dark: #001f08;
   --black: #111111;
   --white: #fff;
   --padding: 1.6rem;
-  --textSmall: 0.8rem;
+  --text-sm: 0.8rem;
+  --text-m: 1rem;
+  --text-l: 1.4rem;
+  --button-hover-backgroung-light: #fff;
 }
 
 html,

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Navigation, Button } from "@/components/index";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -6,23 +7,16 @@ export default function Home() {
     <div className={styles.page}>
       <header className={styles.header}>
         <div className={styles.header__wrapper}>
-          <nav className={styles.navigation}>
-            <ul>
-              <li>
-                <a href="#">Наклейки</a>
-              </li>
-              <li>
-                <a href="#">Преимущества</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+          <Navigation />
           <Image className={styles.logo} src="/Logo.png" alt="Логотип Макулатура" width={100} height={95} priority />
         </div>
       </header>
       <main className={styles.main}>
+        <Button>Button</Button>
+        <Button variant="secondary" size="sm">
+          Button
+        </Button>
+
         <section className={`${styles.main__section} ${styles.main__section_intro}`}>
           <h1>Наклейки на банковскую карту</h1>
           <p>

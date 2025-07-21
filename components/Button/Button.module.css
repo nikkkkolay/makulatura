@@ -1,0 +1,36 @@
+.button {
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 1em;
+	padding: .6em .8em;
+}
+
+.sm {
+	font-size: var(--text-sm);
+}
+
+.m {
+	font-size: var(--text-m);
+}
+
+.l {
+	font-size: var(--text-l);
+}
+
+.primary {
+	background-color: var(--green-250);
+	color: var(--black);
+}
+
+.primary:hover {
+	background-color: var(--button-hover-backgroung-light);
+}
+
+.secondary {
+	background-color: var(--green-300);
+	color: var(--black);
+}
+
+.secondary:hover {
+	background-color: var(--button-hover-backgroung-light);
+}
