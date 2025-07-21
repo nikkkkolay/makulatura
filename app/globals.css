@@ -1,8 +1,14 @@
 :root {
-  --background: #EEEEEE;
-  --foreground: #171717;
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --background: #e6f1e4;
+  --greenLight: #e6f1e4;
+  --green200: #dbe6d9;
+  --green250: #cfdacd;
+  --green300: #b1b9af;
+  --greenDark: #001f08;
+  --black: #111111;
+  --white: #fff;
+  --padding: 1.6rem;
+  --textSmall: 0.8rem;
 }
 
 html,
@@ -11,11 +17,14 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  position: relative;
+  color: var(--black);
   background: var(--background);
   font-family: var(--font-montserrat), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: var(--padding);
+  height: 100vh;
 }
 
 * {
@@ -33,9 +42,20 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -.04em;
+  text-wrap: balance;
+}
+
 h1 {
   font-size: clamp(3rem, 6vw, 6rem);
   font-weight: 700;
+  line-height: 0.8;
 }
 
 h2 {

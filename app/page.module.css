@@ -1,0 +1,54 @@
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0
+}
+
+.header__wrapper {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+}
+
+.navigation {
+	font-size: var(--textSmall);
+	background: var(--green250);
+	border-radius: 1em;
+	height: fit-content;
+	width: fit-content;
+}
+
+.navigation ul {
+	display: flex;
+}
+
+.navigation ul li a {
+	display: flex;
+}
+
+.navigation ul li a {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	font-weight: 600;
+	padding: .6em .4em;
+}
+
+.navigation ul li a:hover .navigation ul li a {
+	opacity: .5;
+}
+
+.navigation ul:hover li a {
+	opacity: 0.4;
+}
+
+.navigation ul li a:hover {
+	opacity: 1;
+}
+
+.navigation ul li:first-child {
+	padding-left: .8em;
+}
+
+.navigation ul li:last-child {
+	padding-right: .8em;
+}
