@@ -9,11 +9,21 @@ type Props = {
   children: ReactNode;
   variant?: Variant;
   size?: Size;
+  round?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button: FC<Props> = ({ children, variant = "primary", size = "m", className = "", ...rest }) => {
+export const Button: FC<Props> = ({ children, variant = "primary", size = "m", round = false, className = "", ...rest }) => {
   return (
-    <button className={`${styles.button} ${styles[variant]} ${styles[size]} ${className}`} {...rest}>
+    <button
+      className={`
+    ${styles.button}
+    ${styles[variant]}
+    ${styles[size]}
+    ${round ? styles.round : ""}
+    ${className}
+  `}
+      {...rest}
+    >
       {children}
     </button>
   );

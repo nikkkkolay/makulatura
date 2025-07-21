@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Navigation, Button } from "@/components/index";
+import { DiAndroid } from "react-icons/di";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -12,9 +13,14 @@ export default function Home() {
         </div>
       </header>
       <main className={styles.main}>
-        <Button>Button</Button>
+        <Button size="l">
+          <DiAndroid />
+        </Button>
+        <Button size="m" round>
+          <DiAndroid />
+        </Button>
         <Button variant="secondary" size="sm">
-          Button
+          <DiAndroid />
         </Button>
 
         <section className={`${styles.main__section} ${styles.main__section_intro}`}>

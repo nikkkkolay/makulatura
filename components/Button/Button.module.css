@@ -1,9 +1,18 @@
 .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	cursor: pointer;
 	font-weight: 600;
 	border-radius: 1em;
 	padding: .6em .8em;
 	border: none;
+}
+
+.round {
+	padding: .6em;
+	border-radius: 50%;
 }
 
 .sm {
