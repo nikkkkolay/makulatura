@@ -1,25 +1,19 @@
 :root {
-  --background: #ffffff;
+  --background: #EEEEEE;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
 }
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +29,31 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.6875rem, 3.375vw, 3.375rem);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: clamp(0.9375rem, 1.875vw, 1.875rem);
+  font-weight: 500;
 }
