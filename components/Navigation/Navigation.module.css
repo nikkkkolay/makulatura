@@ -19,6 +19,7 @@
 	opacity: 1;
 	transition: opacity 0.3s ease;
 	padding: .6em .4em;
+	text-decoration: none;
 }
 
 .navigation ul li a:hover .navigation ul li a {
@@ -56,6 +57,7 @@
 	height: 100%;
 	background: rgba(20, 20, 20, 0.93);
 	display: none;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	z-index: 100;
@@ -63,6 +65,7 @@
 	visibility: hidden;
 	pointer-events: none;
 	transition: all 0.3s ease;
+	color: var(--white);
 }
 
 .active {
@@ -87,6 +90,13 @@
 	color: white;
 	text-decoration: none;
 }
+
+
+.social {
+	position: absolute;
+	bottom: 1.5rem;
+}
+
 
 @media (width<=48rem) {
 	.navigation {

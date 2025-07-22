@@ -1,0 +1,5 @@
+.social ul {
+	display: flex;
+	gap: .6rem;
+	font-size: var(--text-sm);
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, useState } from "react";
-import { Button } from "../Button/Button";
+import { Button, Social } from "@/components";
 import styles from "./Navigation.module.css";
 
 const paths = [
@@ -41,6 +41,7 @@ export const Navigation: FC = () => {
             ))}
           </ul>
         </nav>
+        <Social classNames={styles.social} />
       </div>
     </>
   );

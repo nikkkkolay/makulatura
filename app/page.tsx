@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { TopBar, Button } from "@/components";
+import { TopBar, Button, Footer } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -37,10 +36,8 @@ export default function Home() {
             cupiditate odio praesentium quaerat in deleniti dicta ullam qui, exercitationem maiores veniam pariatur accusantium nihil.
           </p>
         </section>
+        <Footer />
       </main>
-      <footer className={styles.footer}>
-        <Image className={styles.logo} src="/Logo.png" alt="Логотип Макулатура" width={60} height={55} /> МАКУЛАТУКРА
-      </footer>
     </>
   );
 }
