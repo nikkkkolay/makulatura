@@ -3,6 +3,7 @@
 import { FC } from "react";
 import { useRouter } from "next/navigation";
 import { GiBackPain } from "react-icons/gi";
+import { IoChevronBackOutline } from "react-icons/io5";
 import { Button } from "@/components";
 
 const NotFound: FC = () => {
@@ -34,7 +35,7 @@ const NotFound: FC = () => {
             marginBottom: "15px",
           }}
         >
-          Страница не существует
+          Страница не существует.
         </p>
         <Button
           onClick={() => router.push("/")}
@@ -44,7 +45,8 @@ const NotFound: FC = () => {
           }}
           size="sm"
         >
-          На главную
+          <IoChevronBackOutline />
+          &nbsp;На главную
         </Button>
       </div>
     </div>
