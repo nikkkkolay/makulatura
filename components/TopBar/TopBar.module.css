@@ -7,6 +7,12 @@
 	right: 0;
 }
 
+.logoWrapper {
+	position: relative;
+	min-height: 4.375rem;
+	min-width: 4.687rem;
+}
+
 .logo {
 	z-index: 1000;
 }

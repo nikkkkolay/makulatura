@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TopBar } from "@/components";
+import { TopBar, Button } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -9,6 +9,14 @@ export default function Home() {
       <main className={styles.main}>
         <section className={`${styles.main__section} ${styles.main__section_intro}`}>
           <h1>Мы делаем наклейки.</h1>
+          <h2>Мы делаем наклейки.</h2>
+          <h3>Мы делаем наклейки.</h3>
+          <h4>Мы делаем наклейки.</h4>
+          <h5>Мы делаем наклейки.</h5>
+          <Button size="sm">Наклейки</Button>
+          <Button>Наклейки</Button>
+          <Button size="l">Наклейки</Button>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde itaque harum nemo officia dolorem nihil, eum corporis, placeat cum
             perspiciatis, blanditiis fugiat. Aut facilis aliquid inventore libero fugiat laborum ducimus dicta pariatur, sed ut debitis sapiente
