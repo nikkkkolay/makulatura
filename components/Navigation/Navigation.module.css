@@ -82,7 +82,7 @@
 }
 
 .navigationMobil li {
-	margin: 1.5rem 0;
+	margin: 3vh 0;
 }
 
 .navigationMobil a {
@@ -90,7 +90,6 @@
 	color: white;
 	text-decoration: none;
 }
-
 
 .social {
 	position: absolute;

@@ -1,6 +1,6 @@
 .footer {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: .6rem;
@@ -9,10 +9,4 @@
 
 .copyright {
 	font-weight: 600;
-}
-
-@media (width<=48rem) {
-	.footer {
-		flex-direction: column;
-	}
 }
