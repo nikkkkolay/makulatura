@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 export const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
-      <p className={styles.copyright}>МАКУЛАТУКРА | 2025</p>
+      <p className={styles.copyright}>{`МАКУЛАТУКРА | ${new Date().getFullYear()}`}</p>
       <Social />
     </footer>
   );
