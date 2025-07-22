@@ -40,3 +40,65 @@
 .navigation ul li:last-child {
 	padding-right: .8em;
 }
+
+.button {
+	display: none;
+	height: fit-content;
+	width: fit-content;
+	z-index: 200;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(20, 20, 20, 0.93);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.navigationMobil ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.navigationMobil li {
+	margin: 1.5rem 0;
+}
+
+.navigationMobil a {
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+@media (width<=48rem) {
+	.navigation {
+		display: none;
+	}
+
+	.button {
+		display: flex;
+		margin-left: 20px;
+	}
+
+	.overlay {
+		display: flex;
+	}
+}

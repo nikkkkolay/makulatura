@@ -1,32 +1,14 @@
 import Image from "next/image";
-import { Navigation, Button } from "@/components/index";
-import { DiAndroid } from "react-icons/di";
+import { TopBar } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <div className={styles.header__wrapper}>
-          <Navigation />
-          <Image className={styles.logo} src="/Logo.png" alt="Логотип Макулатура" width={100} height={95} priority />
-        </div>
-      </header>
+    <>
+      <TopBar />
       <main className={styles.main}>
-        <Button size="l">
-          <DiAndroid />
-        </Button>
-        <Button size="sm">Meню</Button>
-        <Button variant="secondary" size="m">
-          Закрыть
-        </Button>
-
-        <Button variant="secondary" size="l">
-          Закрыть
-        </Button>
-
         <section className={`${styles.main__section} ${styles.main__section_intro}`}>
-          <h1>Наклейки на банковскую карту</h1>
+          <h1>Мы делаем наклейки.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde itaque harum nemo officia dolorem nihil, eum corporis, placeat cum
             perspiciatis, blanditiis fugiat. Aut facilis aliquid inventore libero fugiat laborum ducimus dicta pariatur, sed ut debitis sapiente
@@ -48,7 +30,9 @@ export default function Home() {
           </p>
         </section>
       </main>
-      <footer className={styles.footer}>footer</footer>
-    </div>
+      <footer className={styles.footer}>
+        <Image className={styles.logo} src="/Logo.png" alt="Логотип Макулатура" width={60} height={55} /> МАКУЛАТУКРА
+      </footer>
+    </>
   );
 }
