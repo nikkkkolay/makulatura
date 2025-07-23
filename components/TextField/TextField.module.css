@@ -10,8 +10,7 @@ textarea.textField {
 	margin-bottom: .2rem;
 }
 
-.textField[type="email"],
-.textField[type="text"],
+.textField,
 textarea.textField {
 	border: 1px solid var(--green-250);
 	border-radius: .4rem;
@@ -19,18 +18,27 @@ textarea.textField {
 	width: 100%;
 }
 
-.textField[type="email"]:hover,
-.textField[type="text"]:hover,
+.textField:hover,
 textarea.textField:hover {
 	border-color: var(--green-300);
 	box-shadow: 0 0 0 1px var(--green-300);
 	outline: none;
 }
 
-.textField[type="email"]:focus,
-.textField[type="text"]:focus,
+.textField:focus,
 textarea.textField:focus {
 	border-color: var(--green-dark);
 	box-shadow: 0 0 0 1px var(--green-dark);
 	outline: none;
+}
+
+.textField:disabled,
+textarea.textField:disabled {
+	opacity: .5;
+}
+
+.textField:disabled:hover,
+textarea.textField:disabled:hover {
+	box-shadow: none;
+	border: 1px solid var(--green-250);
 }

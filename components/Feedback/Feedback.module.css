@@ -38,6 +38,13 @@
 	margin-top: 1rem;
 }
 
+.submitMessage {
+	margin-top: .5rem;
+	margin-left: .2rem;
+	font-size: var(--text-sm);
+	color: var(--green-dark);
+}
+
 .formFooter p {
 	font-weight: 400;
 	font-size: var(--text-sm);

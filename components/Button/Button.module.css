@@ -39,6 +39,16 @@
 	color: var(--black);
 }
 
+.button:disabled {
+	opacity: .5;
+}
+
+.button:disabled:hover {
+	opacity: .2;
+	transition: none;
+	transform: none;
+}
+
 .button:hover {
 	transform: translateY(0.125em);
 }
