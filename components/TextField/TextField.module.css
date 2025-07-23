@@ -1,6 +1,6 @@
 textarea.textField {
-  resize: none;
   min-height: 120px;
+  resize: none;
 }
 
 .wrapper label {
@@ -12,10 +12,10 @@ textarea.textField {
 
 .textField,
 textarea.textField {
+  width: 100%;
+  padding: 0.8rem 1rem;
   border: 1px solid var(--green-250);
   border-radius: 0.4rem;
-  padding: 0.8rem 1rem;
-  width: 100%;
 }
 
 .textField:hover,
@@ -39,6 +39,6 @@ textarea.textField:disabled {
 
 .textField:disabled:hover,
 textarea.textField:disabled:hover {
-  box-shadow: none;
   border: 1px solid var(--green-250);
+  box-shadow: none;
 }

@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 1em;
   padding: 0.6em 0.8em;
   border: none;
-  transition: all 0.3s ease;
+  border-radius: 1em;
+  cursor: pointer;
+  font-weight: 600;
   line-height: 1.1;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 .round {
@@ -30,13 +30,13 @@
 }
 
 .primary {
-  background-color: var(--green-250);
   color: var(--black);
+  background-color: var(--green-250);
 }
 
 .secondary {
-  background-color: var(--green-300);
   color: var(--black);
+  background-color: var(--green-300);
 }
 
 .button:disabled {
@@ -45,8 +45,8 @@
 
 .button:disabled:hover {
   opacity: 0.2;
-  transition: none;
   transform: none;
+  transition: none;
 }
 
 .button:hover {

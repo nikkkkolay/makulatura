@@ -1,6 +1,6 @@
 :root {
   --background: #e6f1e4;
-  --black: #111111;
+  --black: #111;
   --white: #fff;
   --green-light: #e6f1e4;
   --green-dark: #001f08;
@@ -28,19 +28,19 @@ body {
 
 body {
   position: relative;
+  height: 100vh;
+  padding: var(--padding);
   color: var(--black);
   background: var(--background);
   font-family: var(--font-montserrat), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: var(--padding);
-  height: 100vh;
 }
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -61,8 +61,8 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
   letter-spacing: -0.04em;
+  line-height: 1;
   text-wrap: balance;
 }
 
