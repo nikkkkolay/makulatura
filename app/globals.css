@@ -1,12 +1,12 @@
 :root {
   --background: #e6f1e4;
+  --black: #111111;
+  --white: #fff;
   --green-light: #e6f1e4;
+  --green-dark: #001f08;
   --green-200: #dbe6d9;
   --green-250: #cfdacd;
   --green-300: #b1b9af;
-  --green-dark: #001f08;
-  --black: #111111;
-  --white: #fff;
   --padding: 1.6rem;
   --text-sm: 0.9rem;
   --text-m: 1rem;
@@ -15,7 +15,7 @@
   --heading-m: clamp(1.5rem, 2.2vw, 2.2rem);
   --heading-l: clamp(2rem, 3.375vw, 3.375rem);
   --heading-xl: clamp(2.625rem, 4.5vw, 4.5rem);
-  --heading-xxl: clamp(3.5rem, 6vw, 6rem);
+  --heading-xxl: clamp(3rem, 6vw, 6rem);
   --button-hover-backgroung-light: #fff;
   --button-hover-backgroung-green: #b1b9af;
   --radius: 1rem;
@@ -90,13 +90,4 @@ h4 {
 h5 {
   font-size: var(--heading-s);
   font-weight: 500;
-}
-
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
-  border-color: var(--black);
-  box-shadow: 0 0 0 2px var(--black);
-  outline: none;
 }

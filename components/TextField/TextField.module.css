@@ -30,7 +30,7 @@ textarea.textField:hover {
 .textField[type="email"]:focus,
 .textField[type="text"]:focus,
 textarea.textField:focus {
-	border-color: var(--black);
-	box-shadow: 0 0 0 1px var(--black);
+	border-color: var(--green-dark);
+	box-shadow: 0 0 0 1px var(--green-dark);
 	outline: none;
 }

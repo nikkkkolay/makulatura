@@ -1,3 +1,9 @@
 .feedback {
 	margin: calc(var(--padding) * 2) auto 0;
 }
+
+.main__section_intro h1 {
+	margin: auto;
+	width: fit-content;
+	text-align: center;
+}

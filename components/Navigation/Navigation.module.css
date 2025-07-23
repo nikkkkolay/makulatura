@@ -82,11 +82,11 @@
 }
 
 .navigationMobil li {
-	margin: 3vh 0;
+	margin: 2.2vh 0;
 }
 
 .navigationMobil a {
-	font-size: var(--headingL);
+	font-size: var(--heading-m);
 	color: white;
 	text-decoration: none;
 }
@@ -95,7 +95,6 @@
 	position: absolute;
 	bottom: 1.5rem;
 }
-
 
 @media (width<=48rem) {
 	.navigation {

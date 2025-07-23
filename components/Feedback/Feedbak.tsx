@@ -18,7 +18,7 @@ export const Feedback: FC<Props> = ({ className }) => {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aliquam odio facere saepe veniam earum consequuntur incidunt blanditiis
         deleniti eaque!
       </p>
-      <TextField className={styles.textField} id="email" type="email" label="Почта *" required placeholder="Введите вашу почту" />
+      <TextField className={styles.textField} id="email" type="email" label="Почта *" required placeholder="Ваша почта" />
       <TextField className={styles.textField} id="message" label="Сообщение *" placeholder="Напишите что-нибудь..." multiline required />
       <div className={styles.formFooter}>
         <Button type="submit" size="sm">
