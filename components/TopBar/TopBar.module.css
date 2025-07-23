@@ -1,19 +1,19 @@
 .topBar {
-	display: flex;
-	justify-content: space-between;
-	position: sticky;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .logoWrapper {
-	position: relative;
-	min-height: 4.375rem;
-	min-width: 4.687rem;
+  position: relative;
+  min-height: 4.375rem;
+  min-width: 4.687rem;
 }
 
 .logo {
-	z-index: 1000;
+  z-index: 1000;
 }

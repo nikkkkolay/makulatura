@@ -1,44 +1,44 @@
 textarea.textField {
-	resize: none;
-	min-height: 120px;
+  resize: none;
+  min-height: 120px;
 }
 
 .wrapper label {
-	display: inline-block;
-	font-size: var(--text-sm);
-	font-weight: 400;
-	margin-bottom: .2rem;
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  margin-bottom: 0.2rem;
 }
 
 .textField,
 textarea.textField {
-	border: 1px solid var(--green-250);
-	border-radius: .4rem;
-	padding: .8rem 1rem;
-	width: 100%;
+  border: 1px solid var(--green-250);
+  border-radius: 0.4rem;
+  padding: 0.8rem 1rem;
+  width: 100%;
 }
 
 .textField:hover,
 textarea.textField:hover {
-	border-color: var(--green-300);
-	box-shadow: 0 0 0 1px var(--green-300);
-	outline: none;
+  border-color: var(--green-300);
+  box-shadow: 0 0 0 1px var(--green-300);
+  outline: none;
 }
 
 .textField:focus,
 textarea.textField:focus {
-	border-color: var(--green-dark);
-	box-shadow: 0 0 0 1px var(--green-dark);
-	outline: none;
+  border-color: var(--green-dark);
+  box-shadow: 0 0 0 1px var(--green-dark);
+  outline: none;
 }
 
 .textField:disabled,
 textarea.textField:disabled {
-	opacity: .5;
+  opacity: 0.5;
 }
 
 .textField:disabled:hover,
 textarea.textField:disabled:hover {
-	box-shadow: none;
-	border: 1px solid var(--green-250);
+  box-shadow: none;
+  border: 1px solid var(--green-250);
 }

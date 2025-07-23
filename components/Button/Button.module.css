@@ -1,62 +1,62 @@
 .button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	cursor: pointer;
-	font-weight: 600;
-	border-radius: 1em;
-	padding: .6em .8em;
-	border: none;
-	transition: all .3s ease;
-	line-height: 1.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 1em;
+  padding: 0.6em 0.8em;
+  border: none;
+  transition: all 0.3s ease;
+  line-height: 1.1;
 }
 
 .round {
-	padding: .6em;
-	border-radius: 50%;
+  padding: 0.6em;
+  border-radius: 50%;
 }
 
 .sm {
-	font-size: var(--text-sm);
+  font-size: var(--text-sm);
 }
 
 .m {
-	font-size: var(--text-m);
+  font-size: var(--text-m);
 }
 
 .l {
-	font-size: var(--text-l);
+  font-size: var(--text-l);
 }
 
 .primary {
-	background-color: var(--green-250);
-	color: var(--black);
+  background-color: var(--green-250);
+  color: var(--black);
 }
 
 .secondary {
-	background-color: var(--green-300);
-	color: var(--black);
+  background-color: var(--green-300);
+  color: var(--black);
 }
 
 .button:disabled {
-	opacity: .5;
+  opacity: 0.5;
 }
 
 .button:disabled:hover {
-	opacity: .2;
-	transition: none;
-	transform: none;
+  opacity: 0.2;
+  transition: none;
+  transform: none;
 }
 
 .button:hover {
-	transform: translateY(0.125em);
+  transform: translateY(0.125em);
 }
 
 .primary:hover {
-	background-color: var(--button-hover-backgroung-light);
+  background-color: var(--button-hover-backgroung-light);
 }
 
 .secondary:hover {
-	background-color: var(--button-hover-backgroung-light);
+  background-color: var(--button-hover-backgroung-light);
 }

@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { Social } from "@/components";
-import styles from "./Footer.module.css";
+import { FC } from 'react';
+import { Social } from '@/components';
+import styles from './Footer.module.css';
 
 export const Footer: FC = () => {
   return (

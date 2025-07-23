@@ -14,9 +14,17 @@ export const TextField: FC<Props> = ({ label, id, className = "", multiline = fa
     <div className={styles.wrapper}>
       {label && <label htmlFor={id}>{label}</label>}
       {multiline ? (
-        <textarea id={id} className={`${styles.textField} ${className}`} {...(rest as TextareaHTMLAttributes<HTMLTextAreaElement>)} />
+        <textarea
+          id={id}
+          className={`${styles.textField} ${className}`}
+          {...(rest as TextareaHTMLAttributes<HTMLTextAreaElement>)}
+        />
       ) : (
-        <input id={id} className={`${styles.textField} ${className}`} {...(rest as InputHTMLAttributes<HTMLInputElement>)} />
+        <input
+          id={id}
+          className={`${styles.textField} ${className}`}
+          {...(rest as InputHTMLAttributes<HTMLInputElement>)}
+        />
       )}
     </div>
   );

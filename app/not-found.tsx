@@ -1,29 +1,29 @@
-"use client";
+'use client';
 
-import { FC } from "react";
-import { useRouter } from "next/navigation";
-import { GiBackPain } from "react-icons/gi";
-import { IoChevronBackOutline } from "react-icons/io5";
-import { Button } from "@/components";
+import { FC } from 'react';
+import { useRouter } from 'next/navigation';
+import { GiBackPain } from 'react-icons/gi';
+import { IoChevronBackOutline } from 'react-icons/io5';
+import { Button } from '@/components';
 
 const NotFound: FC = () => {
   const router = useRouter();
   return (
     <div
       style={{
-        height: "100vh",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
+        height: '100vh',
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
       <div>
         <h1
           style={{
-            marginBottom: "20px",
-            fontSize: "30px",
+            marginBottom: '20px',
+            fontSize: '30px',
             fontWeight: 500,
           }}
         >
@@ -32,16 +32,16 @@ const NotFound: FC = () => {
         </h1>
         <p
           style={{
-            marginBottom: "15px",
+            marginBottom: '15px',
           }}
         >
           Страница не существует.
         </p>
         <Button
-          onClick={() => router.push("/")}
+          onClick={() => router.push('/')}
           style={{
             fontWeight: 300,
-            margin: "auto",
+            margin: 'auto',
           }}
           size="sm"
         >

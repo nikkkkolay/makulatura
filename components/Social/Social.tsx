@@ -1,16 +1,16 @@
-import { FC } from "react";
-import styles from "./Social.module.css";
+import { FC } from 'react';
+import styles from './Social.module.css';
 
 const socialLinks = [
-  { name: "Ozon", path: "#" },
-  { name: "Rutube", path: "#" },
+  { name: 'Ozon', path: '#' },
+  { name: 'Rutube', path: '#' },
 ];
 
 type Props = {
   classNames?: string;
 };
 
-export const Social: FC<Props> = ({ classNames = "" }) => {
+export const Social: FC<Props> = ({ classNames = '' }) => {
   return (
     <nav className={`${styles.social} ${classNames}`}>
       <ul>

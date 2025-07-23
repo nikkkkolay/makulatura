@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { Navigation } from "@/components/index";
-import styles from "./TopBar.module.css";
+import Image from 'next/image';
+import { Navigation } from '@/components/index';
+import styles from './TopBar.module.css';
 export const TopBar = () => {
   return (
     <header className={styles.topBar}>
