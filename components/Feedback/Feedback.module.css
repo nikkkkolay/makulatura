@@ -1,0 +1,48 @@
+.form {
+	background: var(--white);
+	border-radius: var(--radius);
+	padding: var(--padding);
+	max-width: 35rem;
+}
+
+.formHeader {
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.formHeader h4 {
+	margin-right: 2.8125rem;
+}
+
+.formSubtitle {
+	margin-bottom: 1rem;
+}
+
+.textField {
+	margin-bottom: .75rem;
+}
+
+.formHeader svg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: var(--heading-s);
+	rotate: 90deg;
+}
+
+.formFooter {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: .6rem;
+	margin-top: 1rem;
+}
+
+.formFooter p {
+	font-weight: 400;
+	font-size: var(--text-sm);
+}
+
+.formFooter button:hover {
+	background-color: var(--button-hover-backgroung-green);
+}

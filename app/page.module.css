@@ -1,0 +1,3 @@
+.feedback {
+	margin: calc(var(--padding) * 2) auto 0;
+}

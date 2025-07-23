@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, FC, ReactNode } from "react";
-import styles from "./button.module.css";
+import styles from "./Button.module.css";
 
 type Variant = "primary" | "secondary";
 

@@ -10,13 +10,15 @@
   --padding: 1.6rem;
   --text-sm: 0.9rem;
   --text-m: 1rem;
-  --text-l: 1.4rem;
-  --headingS: clamp(0.9375rem, 1.875vw, 1.875rem);
-  --headingM: clamp(1.25rem, 2.5vw, 2.5rem);
-  --headingL: clamp(1.6875rem, 3.375vw, 3.375rem);
-  --headingXL: clamp(2.25rem, 4.5vw, 4.5rem);
-  --headingXXL: clamp(3rem, 6vw, 6rem);
+  --text-l: 1.15rem;
+  --heading-s: clamp(1.125rem, 1.875vw, 1.875rem);
+  --heading-m: clamp(1.5rem, 2.2vw, 2.2rem);
+  --heading-l: clamp(2rem, 3.375vw, 3.375rem);
+  --heading-xl: clamp(2.625rem, 4.5vw, 4.5rem);
+  --heading-xxl: clamp(3.5rem, 6vw, 6rem);
   --button-hover-backgroung-light: #fff;
+  --button-hover-backgroung-green: #b1b9af;
+  --radius: 1rem;
 }
 
 html,
@@ -59,32 +61,42 @@ h3,
 h4,
 h5,
 h6 {
+  line-height: 1;
   letter-spacing: -.04em;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: var(--headingXXL);
+  font-size: var(--heading-xxl);
   font-weight: 700;
   line-height: 0.8;
 }
 
 h2 {
-  font-size: var(--headingXL);
+  font-size: var(--heading-xl);
   font-weight: 700;
 }
 
 h3 {
-  font-size: var(--headingL);
+  font-size: var(--heading-l);
   font-weight: 600;
 }
 
 h4 {
-  font-size: var(--headingM);
+  font-size: var(--heading-m);
   font-weight: 600;
 }
 
 h5 {
-  font-size: var(--headingS);
+  font-size: var(--heading-s);
   font-weight: 500;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  border-color: var(--black);
+  box-shadow: 0 0 0 2px var(--black);
+  outline: none;
 }

@@ -1,0 +1,36 @@
+textarea.textField {
+	resize: none;
+	min-height: 120px;
+}
+
+.wrapper label {
+	display: inline-block;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	margin-bottom: .2rem;
+}
+
+.textField[type="email"],
+.textField[type="text"],
+textarea.textField {
+	border: 1px solid var(--green-250);
+	border-radius: .4rem;
+	padding: .8rem 1rem;
+	width: 100%;
+}
+
+.textField[type="email"]:hover,
+.textField[type="text"]:hover,
+textarea.textField:hover {
+	border-color: var(--green-300);
+	box-shadow: 0 0 0 1px var(--green-300);
+	outline: none;
+}
+
+.textField[type="email"]:focus,
+.textField[type="text"]:focus,
+textarea.textField:focus {
+	border-color: var(--black);
+	box-shadow: 0 0 0 1px var(--black);
+	outline: none;
+}

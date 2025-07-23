@@ -1,5 +1,8 @@
-import { TopBar, Button, Footer } from "@/components";
+import { TopBar, Button, Footer, TextField } from "@/components";
+
 import styles from "./page.module.css";
+import { LuArrowDownRight } from "react-icons/lu";
+import { Feedback } from "@/components/Feedback/Feedbak";
 
 export default function Home() {
   return (
@@ -8,14 +11,12 @@ export default function Home() {
       <main className={styles.main}>
         <section className={`${styles.main__section} ${styles.main__section_intro}`}>
           <h1>Мы делаем наклейки.</h1>
-          <h2>Мы делаем наклейки.</h2>
-          <h3>Мы делаем наклейки.</h3>
-          <h4>Мы делаем наклейки.</h4>
-          <h5>Мы делаем наклейки.</h5>
-          <Button size="sm">Наклейки</Button>
-          <Button>Наклейки</Button>
-          <Button size="l">Наклейки</Button>
         </section>
+
+        <section>
+          <Feedback className={styles.feedback} />
+        </section>
+
         <Footer />
       </main>
     </>
