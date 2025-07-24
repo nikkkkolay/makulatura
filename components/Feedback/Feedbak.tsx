@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import { LuArrowDownRight } from 'react-icons/lu';
-import { Button, TextField } from '..';
-import styles from './Feedback.module.css';
+import { FC } from "react";
+import { LuArrowDownRight } from "react-icons/lu";
+import { Button, TextField } from "..";
+import styles from "./Feedback.module.css";
 
 type Props = {
   className?: string;
@@ -36,7 +36,7 @@ export const Feedback: FC<Props> = ({ className }) => {
         multiline
         required
       />
-      <p className={styles.submitMessage}>Спасибо за ваше сообщение. Сообщение отправлено!</p>
+      <p className={styles.submitMessage}>Спасибо. Сообщение отправлено!</p>
 
       <div className={styles.formFooter}>
         <Button type="submit" size="sm" disabled>

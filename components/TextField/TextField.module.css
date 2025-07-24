@@ -6,7 +6,7 @@ textarea.textField {
 .wrapper label {
   display: inline-block;
   font-size: var(--text-sm);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0.2rem;
 }
 
