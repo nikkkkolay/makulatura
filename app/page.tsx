@@ -1,16 +1,16 @@
-import { TopBar, Footer } from '@/components';
+import { Feedback } from "@/components/Feedback/Feedbak";
+import { ProductCard } from "@/components";
 
-import styles from './page.module.css';
-import { Feedback } from '@/components/Feedback/Feedbak';
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
-      <TopBar />
       <main className={styles.main}>
         <section className={`${styles.main__section_intro}`}>
           <h1>
-            Мы делаем <br /> наклейки.
+            Мы <br />
+            делаем <br /> наклейки.
           </h1>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae a officiis!
@@ -18,11 +18,40 @@ export default function Home() {
           </h2>
         </section>
 
+        <section className={styles.shop}>
+          <h2>Магазин</h2>
+
+          <div className={styles.cardList}>
+            <ProductCard
+              name="Лабубу"
+              type="vertical-card"
+              image="/1.png"
+              descriptrion="Наклейка на банковскую карту"
+            />
+            <ProductCard
+              name="Лабубу"
+              type="horizontal-card"
+              image="/2.png"
+              descriptrion="Наклейка на банковскую карту"
+            />
+            <ProductCard
+              name="Лабубу"
+              type="vertical-card"
+              image="/3.png"
+              descriptrion="Наклейка на банковскую карту"
+            />
+            <ProductCard
+              name="Лабубу"
+              type="vertical-card"
+              image="/4.png"
+              descriptrion="Наклейка на банковскую карту"
+            />
+          </div>
+        </section>
+
         <section>
           <Feedback className={styles.feedback} />
         </section>
-
-        <Footer />
       </main>
     </>
   );

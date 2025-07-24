@@ -1,21 +1,23 @@
-import type { Metadata } from 'next';
-import { Montserrat_Alternates } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Montserrat_Alternates } from "next/font/google";
+import { TopBar, Footer } from "@/components";
+
+import "./globals.css";
 
 const montserrat = Montserrat_Alternates({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  style: ['normal', 'italic'],
-  variable: '--font-montserrat',
-  display: 'swap',
+  subsets: ["latin", "cyrillic"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: 'МАКУЛАТУРА | НАКЛЕЙКИ',
-    template: '%s | МАКУЛАТУРА ',
+    default: "МАКУЛАТУРА | НАКЛЕЙКИ",
+    template: "%s | МАКУЛАТУРА ",
   },
-  description: 'Самый лучший магазин наклеек',
+  description: "Самый лучший магазин наклеек",
 };
 
 export default function RootLayout({
@@ -25,7 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={montserrat.variable}>
-      <body>{children}</body>
+      <body>
+        <TopBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

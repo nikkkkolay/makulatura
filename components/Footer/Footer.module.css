@@ -1,7 +1,6 @@
 .footer {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  flex-flow: column;
   gap: 0.6rem;
   margin-top: calc(var(--padding) * 2);
 }

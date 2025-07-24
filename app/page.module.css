@@ -7,3 +7,21 @@
   margin: auto;
   text-align: center;
 }
+
+.shop {
+  max-width: 90rem;
+  margin: 20vh auto 10vh;
+}
+
+.shop h2 {
+  width: fit-content;
+  margin: calc(var(--padding) * 2) auto;
+  text-align: center;
+
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: calc(var(--padding) / 2);
+}
