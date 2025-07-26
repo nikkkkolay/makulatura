@@ -16,9 +16,9 @@ export async function sendEmail(formData: FormData) {
 
   try {
     await transporter.sendMail({
-      from: `"Форма сайта" <${process.env.GMAIL_USER}>`,
+      from: `"Форма" <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_USER,
-      subject: "Новое сообщение",
+      subject: "Новое сообщение с сайта НАКЛЕЙКИ",
       html: `<p>Email: ${email}</p><p>${message}</p>`,
     });
 
