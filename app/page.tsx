@@ -7,11 +7,13 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <section className={`${styles.main__section_intro}`}>
+        <header className={styles.header}>
           <h1>
             Мы <br />
             делаем <br /> наклейки.
           </h1>
+        </header>
+        <section>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae a officiis!
             Possimus fugit cum ex eos. Quasi, vero expedita!
@@ -19,7 +21,7 @@ export default function Home() {
         </section>
 
         <section className={styles.shop}>
-          <h2>Магазин наклеек</h2>
+          <h2>Магазинчик</h2>
 
           <div className={styles.cardList}>
             <ProductCard
@@ -29,25 +31,25 @@ export default function Home() {
               descriptrion="Наклейка на банковскую карту"
             />
             <ProductCard
-              name="Лабубу"
+              name="Собачки-котики"
               type="horizontal-card"
               image="/5.png"
               descriptrion="Наклейка на банковскую карту"
             />
             <ProductCard
-              name="Лабубу"
+              name="Котики-слачки"
               type="vertical-card"
               image="/2.png"
               descriptrion="Наклейка на банковскую карту"
             />
             <ProductCard
-              name="Лабубу"
+              name="НЛО коты"
               type="vertical-card"
               image="/3.png"
               descriptrion="Наклейка на банковскую карту"
             />
             <ProductCard
-              name="Лабубу"
+              name="Пухля"
               type="vertical-card"
               image="/6.png"
               descriptrion="Наклейка на банковскую карту"

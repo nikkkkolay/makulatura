@@ -10,8 +10,8 @@
 
 .logoWrapper {
   position: relative;
-  min-height: 4.375rem;
-  min-width: 4.687rem;
+  min-height: var(--logo-height);
+  min-width: var(--logo-width);
 }
 
 .logo {

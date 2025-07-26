@@ -15,9 +15,9 @@
 	cursor: pointer;
 }
 
-.card h4 {
-	font-size: calc(var(--heading-m) / 1.5);
-	margin-bottom: .5em;
+.card h3 {
+	font-size: calc(var(--heading-m) / 1.3);
+	margin-bottom: .6em;
 }
 
 .card:hover {
@@ -45,11 +45,12 @@
 	flex-direction: column;
 	justify-content: space-around;
 	text-align: center;
+	gap: .5em;
 	height: 100%;
 }
 
 .card img {
-	left: 14px !important;
+	left: 10px !important;
 }
 
 .card figcaption {

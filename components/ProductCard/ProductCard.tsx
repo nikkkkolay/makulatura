@@ -13,7 +13,7 @@ type Props = {
 export const ProductCard: FC<Props> = ({ name, image, type = "sticker", descriptrion }) => {
   return (
     <article className={styles.card}>
-      <h4>{name}</h4>
+      <h3>{name}</h3>
       <figure>
         <div className={`${styles.imgWrapper} ${styles[type]}`}>
           <Image src={image} alt="" fill priority />

@@ -1,11 +1,19 @@
-.feedback {
-  margin: calc(var(--padding) * 2) auto 0;
+.header {
+  display: flex;
+  align-items: center;
+  height: calc(100svh - var(--logo-height) - (var(--padding) * 4));
 }
 
-.main__section_intro h1 {
-  width: fit-content;
-  margin: auto;
+.header h1 {
+  position: relative;
+  top: -.3em;
+  font-size: var(--heading-xxl);
+  width: 100%;
   text-align: center;
+}
+
+.feedback {
+  margin: calc(var(--padding) * 2) auto 0;
 }
 
 .shop {
@@ -23,5 +31,5 @@
 .cardList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: calc(var(--padding) / 2);
+  gap: calc(var(--padding) / 1.5);
 }

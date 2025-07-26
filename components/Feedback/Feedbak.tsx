@@ -11,7 +11,7 @@ export const Feedback: FC<Props> = ({ className }) => {
   return (
     <form className={`${styles.form} ${className}`} action="">
       <div className={styles.formHeader}>
-        <h4>Давай работать вместе</h4>
+        <h3>Давай работать вместе</h3>
         <LuArrowDownRight />
       </div>
       <p className={styles.formSubtitle}>
