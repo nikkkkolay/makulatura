@@ -1,7 +1,7 @@
+import { FC } from "react";
 import Image from "next/image";
 import { Button } from "@/components";
 import styles from "./ProductCard.module.css";
-import { FC } from "react";
 
 type Props = {
   name: string;

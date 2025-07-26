@@ -31,6 +31,12 @@ export default function Home() {
             <ProductCard
               name="Лабубу"
               type="horizontal-card"
+              image="/5.png"
+              descriptrion="Наклейка на банковскую карту"
+            />
+            <ProductCard
+              name="Лабубу"
+              type="vertical-card"
               image="/2.png"
               descriptrion="Наклейка на банковскую карту"
             />
@@ -44,6 +50,12 @@ export default function Home() {
               name="Лабубу"
               type="vertical-card"
               image="/4.png"
+              descriptrion="Наклейка на банковскую карту"
+            />
+            <ProductCard
+              name="Лабубу"
+              type="vertical-card"
+              image="/6.png"
               descriptrion="Наклейка на банковскую карту"
             />
           </div>

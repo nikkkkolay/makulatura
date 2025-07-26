@@ -7,6 +7,7 @@
 .card {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 1rem;
 	border: 1px solid var(--green-250);
 	border-radius: var(--radius);
@@ -16,28 +17,35 @@
 
 .card h4 {
 	font-size: calc(var(--heading-m) / 1.5);
-	margin-bottom: .3em;
+	margin-bottom: .5em;
 }
 
 .card:hover {
 	transform: translateY(-5px);
 }
 
-.card .sticker {
+.sticker {
 	aspect-ratio: 1 / 1;
 }
 
-.card .vertical-card {
+.vertical-card {
 	aspect-ratio: 9 / 10;
 }
 
-.card .horizontal-card {
+.horizontal-card {
 	aspect-ratio: 10 / 9;
 }
 
-.card .imgWrapper {
+.imgWrapper {
 	position: relative;
-	margin-top: .4rem;
+}
+
+.card figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	height: 100%;
 }
 
 .card img {
