@@ -14,10 +14,10 @@ export default function Home() {
           </h1>
         </header>
         <section>
-          <h2>
+          <h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae a officiis!
             Possimus fugit cum ex eos. Quasi, vero expedita!
-          </h2>
+          </h3>
         </section>
 
         <section className={styles.shop}>
