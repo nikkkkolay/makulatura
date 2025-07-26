@@ -19,7 +19,7 @@ export default function Home() {
         </section>
 
         <section className={styles.shop}>
-          <h2>Магазин</h2>
+          <h2>Магазин наклеек</h2>
 
           <div className={styles.cardList}>
             <ProductCard
@@ -44,12 +44,6 @@ export default function Home() {
               name="Лабубу"
               type="vertical-card"
               image="/3.png"
-              descriptrion="Наклейка на банковскую карту"
-            />
-            <ProductCard
-              name="Лабубу"
-              type="vertical-card"
-              image="/4.png"
               descriptrion="Наклейка на банковскую карту"
             />
             <ProductCard
