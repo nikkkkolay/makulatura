@@ -11,6 +11,7 @@
   --text-sm: 0.9rem;
   --text-m: 1rem;
   --text-l: 1.15rem;
+  --text-xl: 1.35rem;
   --heading-s: clamp(1.125rem, 1.875vw, 1.875rem);
   --heading-m: clamp(1.5rem, 2.2vw, 2.2rem);
   --heading-l: clamp(2rem, 3.375vw, 3.375rem);
@@ -29,9 +30,6 @@ body {
 }
 
 body {
-  position: relative;
-  height: 100vh;
-  padding: var(--padding);
   color: var(--black);
   background: var(--background);
   font-family: var(--font-montserrat), sans-serif;

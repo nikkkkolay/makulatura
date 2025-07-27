@@ -1,9 +1,9 @@
-import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
-import styles from './Button.module.css';
+import { ButtonHTMLAttributes, FC, ReactNode } from "react";
+import styles from "./Button.module.css";
 
-type Variant = 'primary' | 'secondary';
+type Variant = "primary" | "secondary";
 
-type Size = 'sm' | 'm' | 'l';
+type Size = "sm" | "m" | "l" | "xl";
 
 type Props = {
   children: ReactNode;
@@ -14,10 +14,10 @@ type Props = {
 
 export const Button: FC<Props> = ({
   children,
-  variant = 'primary',
-  size = 'm',
+  variant = "primary",
+  size = "m",
   round = false,
-  className = '',
+  className = "",
   ...rest
 }) => {
   return (
@@ -26,7 +26,7 @@ export const Button: FC<Props> = ({
     ${styles.button}
     ${styles[variant]}
     ${styles[size]}
-    ${round ? styles.round : ''}
+    ${round ? styles.round : ""}
     ${className}
   `}
       {...rest}

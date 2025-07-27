@@ -1,3 +1,8 @@
+.main {
+  position: relative;
+  padding: 0 var(--padding);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -6,7 +11,7 @@
 
 .header h1 {
   position: relative;
-  top: -.3em;
+  top: -.4em;
   font-size: var(--heading-xxl);
   width: 100%;
   text-align: center;
@@ -25,7 +30,6 @@
   width: fit-content;
   margin: calc(var(--padding) * 2) auto;
   text-align: center;
-
 }
 
 .cardList {

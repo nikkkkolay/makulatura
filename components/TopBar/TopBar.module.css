@@ -1,11 +1,8 @@
 .topBar {
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   z-index: 9999;
+  padding: var(--padding) var(--padding) 0;
 }
 
 .logoWrapper {

@@ -1,18 +1,16 @@
-import { Feedback } from "@/components/Feedback/Feedbak";
-import { ProductCard } from "@/components";
-
+import { ProductCard, Feedback, ScrollUp } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
+      <header className={styles.header}>
+        <h1>
+          Мы <br />
+          делаем <br /> наклейки.
+        </h1>
+      </header>
       <main className={styles.main}>
-        <header className={styles.header}>
-          <h1>
-            Мы <br />
-            делаем <br /> наклейки.
-          </h1>
-        </header>
         <section>
           <h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae a officiis!
@@ -60,6 +58,8 @@ export default function Home() {
         <section>
           <Feedback className={styles.feedback} />
         </section>
+
+        <ScrollUp />
       </main>
     </>
   );

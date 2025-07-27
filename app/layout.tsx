@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat_Alternates } from "next/font/google";
-import { TopBar, Footer } from "@/components";
+import { TopBar, Footer, SmoothScrollWrapper } from "@/components";
 
 import "./globals.css";
 
@@ -28,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="ru" className={montserrat.variable}>
       <body>
-        <TopBar />
-        {children}
-        <Footer />
+        <SmoothScrollWrapper>
+          <TopBar />
+          {children}
+          <Footer />
+        </SmoothScrollWrapper>
       </body>
     </html>
   );
