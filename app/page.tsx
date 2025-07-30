@@ -1,4 +1,4 @@
-import { ProductCard, Feedback, ScrollUp } from "@/components";
+import { ProductCard, Feedback, Intro } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -13,10 +13,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <section>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae a officiis!
-            Possimus fugit cum ex eos. Quasi, vero expedita!
-          </h3>
+          <Intro
+            className={styles.intro}
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae a officiis!
+            Possimus fugit cum ex eos. Quasi, vero expedita!"
+          />
         </section>
 
         <section className={styles.shop}>
