@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat_Alternates } from "next/font/google";
-import { TopBar, Footer, ScrollUp } from "@/components";
+import { TopBar, Footer, ScrollUp, YMInitializer } from "@/components";
 
 import "./globals.css";
+import { Suspense } from "react";
 
 const montserrat = Montserrat_Alternates({
   subsets: ["latin", "cyrillic"],
@@ -49,6 +50,9 @@ export default function RootLayout({
   return (
     <html lang="ru" className={montserrat.variable}>
       <body>
+        <Suspense fallback={<></>}>
+          <YMInitializer />
+        </Suspense>
         <TopBar />
         {children}
         <Footer />

@@ -9,3 +9,4 @@ export { Feedback } from "./Feedback/Feedbak";
 export { SmoothScrollWrapper } from "./SmoothScrollWrapper/SmoothScrollWrapper";
 export { ScrollUp } from "./ScrollUp/ScrollUp";
 export { Intro } from "./Intro/Intro";
+export { YMInitializer } from "./YMInitializer/YMInitializer";
