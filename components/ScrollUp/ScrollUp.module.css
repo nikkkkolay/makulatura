@@ -1,14 +1,19 @@
-.fixedContainer {
+.fixed {
 	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	/* background-color: rgb(0, 0, 0); */
-	height: 100vh;
+	right: var(--padding);
+	bottom: calc(var(--padding) * 4);
+	border: .2px solid var(--white);
+	z-index: 100;
+	width: 2.8125rem;
+	height: 2.8125rem;
+	transform: translateY(200px);
 }
 
-.fixed {
+.icon {
 	position: absolute;
-	bottom: var(--padding);
-	right: var(--padding);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s;
+	will-change: transform;
 }

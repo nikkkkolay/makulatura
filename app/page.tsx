@@ -10,6 +10,7 @@ export default function Home() {
           делаем <br /> наклейки.
         </h1>
       </header>
+
       <main className={styles.main}>
         <section>
           <h3>
@@ -58,8 +59,6 @@ export default function Home() {
         <section>
           <Feedback className={styles.feedback} />
         </section>
-
-        <ScrollUp />
       </main>
     </>
   );

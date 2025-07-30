@@ -27,7 +27,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  font-size: var(--heading-s);
+  font-size: calc(var(--heading-m) /1.1);
   rotate: 90deg;
 }
 

@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { FC, useState } from 'react';
-import { Button, Social } from '@/components';
-import styles from './Navigation.module.css';
+import { FC, useState } from "react";
+import { Button, Social } from "@/components";
+import styles from "./Navigation.module.css";
 
 const paths = [
-  { name: 'Наклейки', path: '#' },
-  { name: 'Преимущества', path: '#' },
-  { name: 'Магазин', path: '#' },
-  { name: 'Контакты', path: '#' },
+  { name: "Наклейки", path: "#" },
+  { name: "Преимущества", path: "#" },
+  { name: "Магазин", path: "#" },
+  { name: "Контакты", path: "#" },
 ];
 
 export const Navigation: FC = () => {
@@ -27,9 +27,9 @@ export const Navigation: FC = () => {
         </ul>
       </nav>
       <Button className={styles.button} size="sm" onClick={() => setOpen(!open)}>
-        {!open ? 'Meню' : 'Закрыть'}
+        {!open ? "Meню" : "Закрыть"}
       </Button>
-      <div className={`${styles.overlay} ${open ? styles.active : ''}`} onClick={closeMenu}>
+      <div className={`${styles.overlay} ${open ? styles.active : ""}`} onClick={closeMenu}>
         <nav className={styles.navigationMobil}>
           <ul>
             {paths.map(({ name, path }, i) => (

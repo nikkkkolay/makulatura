@@ -1,6 +1,11 @@
+.textField {
+  font-family: var(--font-montserrat);
+  font-size: var(--text-sm);
+}
+
 textarea.textField {
   min-height: 120px;
-  resize: none;
+  font-family: var(--font-montserrat)
 }
 
 .wrapper label {
