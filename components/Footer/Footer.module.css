@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column;
   gap: 0.6rem;
-  margin-top: calc(var(--padding) * 2);
   padding: 0 var(--padding) var(--padding);
 }
 
