@@ -29,10 +29,8 @@ export default function RootLayout({
     <html lang="ru" className={montserrat.variable}>
       <body>
         <TopBar />
-        {/* <SmoothScrollWrapper> */}
         {children}
         <Footer />
-        {/* </SmoothScrollWrapper> */}
         <ScrollUp />
       </body>
     </html>

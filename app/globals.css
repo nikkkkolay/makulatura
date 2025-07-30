@@ -24,6 +24,11 @@
   --logo-width: 4.687rem;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(5.9375rem + var(--padding))
+}
+
 body {
   color: var(--black);
   background: var(--background);

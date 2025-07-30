@@ -5,10 +5,9 @@ import { Button, Social } from "@/components";
 import styles from "./Navigation.module.css";
 
 const paths = [
-  { name: "Наклейки", path: "#" },
-  { name: "Преимущества", path: "#" },
-  { name: "Магазин", path: "#" },
-  { name: "Контакты", path: "#" },
+  { name: "Главная", path: "#header" },
+  { name: "Магазин", path: "#shop" },
+  { name: "Контакты", path: "#feedback" },
 ];
 
 export const Navigation: FC = () => {
