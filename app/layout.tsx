@@ -49,10 +49,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={montserrat.variable}>
+      <Suspense fallback={<></>}>
+        <YMInitializer />
+      </Suspense>
       <body>
-        <Suspense fallback={<></>}>
-          <YMInitializer />
-        </Suspense>
         <TopBar />
         {children}
         <Footer />
