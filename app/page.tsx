@@ -1,22 +1,23 @@
-import { ProductCard, Feedback, Intro } from "@/components";
+import Image from "next/image";
+import { ProductCard, Feedback, Intro, Hero, Stickers } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
-      <header className={styles.header} id="header">
-        <h1>
-          Мы <br />
-          делаем <br /> наклейки.
-        </h1>
-      </header>
+      <Hero />
 
       <main className={styles.main}>
         <section>
+          <Stickers />
+        </section>
+
+        <section>
           <Intro
             className={styles.intro}
-            text="Качественная печать и надежные материалы. Уникальный стиль и дизайн. Стойкие наклейки при любой погоде и на любой поверхности."
+            text="Мы любим наклейки — просто потому, что это весело."
           />
+          <hr />
         </section>
 
         <section className={styles.shop} id="shop">
@@ -51,30 +52,6 @@ export default function Home() {
               name="Пухля"
               type="vertical-card"
               image="/6.png"
-              descriptrion="Наклейка на банковскую карту"
-            />
-            <ProductCard
-              name="Котики-слачки"
-              type="vertical-card"
-              image="/2.png"
-              descriptrion="Наклейка на банковскую карту"
-            />
-            <ProductCard
-              name="НЛО коты"
-              type="vertical-card"
-              image="/3.png"
-              descriptrion="Наклейка на банковскую карту"
-            />
-            <ProductCard
-              name="Котики-слачки"
-              type="vertical-card"
-              image="/2.png"
-              descriptrion="Наклейка на банковскую карту"
-            />
-            <ProductCard
-              name="НЛО коты"
-              type="vertical-card"
-              image="/3.png"
               descriptrion="Наклейка на банковскую карту"
             />
           </div>

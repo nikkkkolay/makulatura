@@ -3,39 +3,30 @@
   padding: 0 var(--padding);
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  height: calc(100svh - var(--logo-height) - (var(--padding) * 4));
-}
-
-.header h1 {
-  position: relative;
-  top: -.4em;
-  font-size: var(--heading-xxl);
-  width: 100%;
-  text-align: center;
-}
-
 .intro {
-  margin: 20vh auto 0;
+  margin: 8rem auto 8rem;
   text-align: center;
   max-width: 21em;
 }
 
+.intro+hr {
+  width: 30%;
+  margin: 0 auto;
+}
+
 .shop {
   max-width: 90rem;
-  margin: 20vh auto 10vh;
+  margin: auto;
 }
 
 .shop h2 {
   width: fit-content;
-  margin: 10rem auto 5rem;
+  margin: 10rem auto 7.5rem;
   text-align: center;
 }
 
 .feedback {
-  margin: 8rem auto 5rem;
+  margin: 8rem auto 6rem;
 }
 
 .cardList {
@@ -45,11 +36,16 @@
 }
 
 @media (max-width: 768px) {
+
+  .intro {
+    margin: 6rem auto 6rem;
+  }
+
   .feedback {
     margin: 8rem auto 3.5rem;
   }
 
   .shop h2 {
-    margin: 10rem auto 3.5rem;
+    margin: 6rem auto 3.5rem;
   }
 }

@@ -15,7 +15,6 @@
 }
 
 .formSubtitle {
-  font-style: italic;
   margin-bottom: 1rem;
 }
 
@@ -48,7 +47,6 @@
 
 .formFooter p {
   font-size: var(--text-sm);
-  font-weight: 500;
 }
 
 .formFooter button:hover {

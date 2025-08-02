@@ -45,8 +45,8 @@ export const Feedback: FC<Props> = ({ className }) => {
       </div>
 
       <p className={styles.formSubtitle}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aliquam odio facere saepe
-        veniam earum consequuntur incidunt blanditiis deleniti eaque!
+        Есть своя идея для наклеек? Мы открыты к сотрудничеству с авторами. Предложи концепт — мы
+        реализуем его вместе.
       </p>
 
       <TextField
@@ -65,7 +65,7 @@ export const Feedback: FC<Props> = ({ className }) => {
         id="message"
         name="message"
         label="Сообщение *"
-        placeholder="Напишите что-нибудь..."
+        placeholder="Напиши нам, можешь скинуть ссылку на соцсети или свои работы…"
         multiline
         required
         disabled={status === "success"}
