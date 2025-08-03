@@ -12,41 +12,50 @@ export const Stickers = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const elements = containerRef.current?.querySelectorAll(".sticker");
+    const elements = containerRef.current?.querySelectorAll(`.${styles.sticker}`);
     if (!elements) return;
 
     elements.forEach((el, index) => {
-      const fromX = index % 2 === 0 ? -150 : 150;
-      const rotation = index % 2 === 0 ? -20 : 20;
+      const rotation = index % 2 === 0 ? -15 : 15;
+      const fromX = index % 2 === 0 ? -100 : 100;
 
-      gsap.from(el, {
-        x: fromX,
-        opacity: 0,
-        rotate: rotation,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
+      gsap.fromTo(
+        el,
+        {
+          x: fromX,
+          opacity: 0,
+          rotate: rotation,
+          zIndex: index + 1,
         },
-      });
+        {
+          x: 0,
+          opacity: 1,
+          rotate: 0,
+          scrollTrigger: {
+            trigger: el,
+            start: `top ${80 - index * 5}%`,
+            toggleActions: "play none none none",
+            scrub: true,
+            markers: false,
+          },
+        }
+      );
     });
   }, []);
 
   return (
     <div className={styles.stickers} ref={containerRef}>
-      <div className="sticker">
-        <Image src="/Бэк1.png" alt="" width={200} height={200} />
+      <div className={styles.sticker}>
+        <Image src="/Бэк1.png" alt="" fill />
       </div>
-      <div className="sticker">
-        <Image src="/Бэк2.png" alt="" width={220} height={220} />
+      <div className={styles.sticker}>
+        <Image src="/Бэк2.png" alt="" fill />
       </div>
-      <div className="sticker">
-        <Image src="/Бэк3.png" alt="" width={180} height={180} />
+      <div className={styles.sticker}>
+        <Image src="/Бэк3.png" alt="" fill />
       </div>
-      <div className="sticker">
-        <Image src="/Бэк4.png" alt="" width={200} height={200} />
+      <div className={styles.sticker}>
+        <Image src="/Бэк4.png" alt="" fill />
       </div>
     </div>
   );
