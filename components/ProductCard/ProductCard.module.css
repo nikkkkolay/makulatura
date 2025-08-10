@@ -1,78 +1,78 @@
 .link {
-	text-decoration: none;
-	display: contents;
+  text-decoration: none;
+  display: contents;
 }
 
 .link:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .card,
 .card img,
 .card:hover button {
-	transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 1rem;
-	border: 1px solid var(--green-250);
-	border-radius: var(--radius);
-	padding: var(--padding);
-	cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--green-250);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  cursor: pointer;
 }
 
 .card h3 {
-	font-size: calc(var(--heading-m) / 1.3);
-	margin-bottom: .6em;
+  font-size: calc(var(--heading-m) / 1.3);
+  margin-bottom: 0.6em;
 }
 
 .card:hover {
-	transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .sticker {
-	aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;
 }
 
 .vertical-card {
-	aspect-ratio: 9 / 10;
+  aspect-ratio: 9 / 10;
 }
 
 .horizontal-card {
-	aspect-ratio: 10 / 9;
+  aspect-ratio: 10 / 9;
 }
 
 .imgWrapper {
-	position: relative;
+  position: relative;
 }
 
 .card figure {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	text-align: center;
-	gap: .5em;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  gap: 0.5em;
+  height: 100%;
 }
 
 .card img {
-	left: 10px !important;
+  left: 10px !important;
 }
 
 .card figcaption {
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .card:hover button {
-	background-color: var(--button-hover-backgroung-light);
+  background-color: var(--button-hover-backgroung-light);
 }
 
 .card:hover img {
-	filter: drop-shadow(0 8px 8px rgba(161, 229, 190, 0.9));
+  filter: drop-shadow(0 8px 8px rgba(161, 229, 190, 0.9));
 }

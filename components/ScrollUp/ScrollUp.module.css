@@ -1,19 +1,19 @@
 .fixed {
-	position: fixed;
-	right: var(--padding);
-	bottom: calc(var(--padding) * 4);
-	border: .2px solid var(--white);
-	z-index: 100;
-	width: 2.8125rem;
-	height: 2.8125rem;
-	transform: translateY(200px);
+  position: fixed;
+  right: var(--padding);
+  bottom: calc(var(--padding) * 4);
+  border: 0.2px solid var(--white);
+  z-index: 100;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  transform: translateY(200px);
 }
 
 .icon {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: opacity 0.3s;
-	will-change: transform;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+  will-change: transform;
 }

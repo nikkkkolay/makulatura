@@ -10,7 +10,7 @@
   line-height: 1.1;
   text-align: center;
   transition: all 0.3s ease;
-  border: .2px solid var(--white);
+  border: 0.2px solid var(--white);
 }
 
 .round {

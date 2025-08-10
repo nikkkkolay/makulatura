@@ -5,7 +5,7 @@
 
 textarea.textField {
   min-height: 120px;
-  font-family: var(--font-montserrat)
+  font-family: var(--font-montserrat);
 }
 
 .wrapper label {
