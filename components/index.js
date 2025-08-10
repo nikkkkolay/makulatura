@@ -12,3 +12,4 @@ export { Intro } from "./Intro/Intro";
 export { Hero } from "./Hero/Hero";
 export { Stickers } from "./Stickers/Stickers";
 export { YMInitializer } from "./YMInitializer/YMInitializer";
+export { Shop } from "./Shop/Shop";

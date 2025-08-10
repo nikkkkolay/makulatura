@@ -16,13 +16,11 @@ export const Stickers = () => {
 
     const elements = gsap.utils.toArray<HTMLElement>(`.${styles.sticker}`);
 
-    elements.forEach((el, i) => {
-      gsap.set(el, {
-        x: i === 0 ? 0 : i % 2 === 0 ? -300 : 300,
-        opacity: i === 0 ? 1 : 0,
-        rotate: 0,
-        zIndex: i + 1,
-      });
+    gsap.set(elements, {
+      x: (i) => (i === 0 ? 0 : i % 2 === 0 ? -300 : 300),
+      opacity: (i) => (i === 0 ? 1 : 0),
+      rotate: 0,
+      zIndex: (i) => i + 1,
     });
 
     gsap.to(elements, {
@@ -37,7 +35,6 @@ export const Stickers = () => {
       stagger: 0.5,
       scrollTrigger: {
         trigger: containerRef.current,
-        toggleActions: "play none play reverse",
         start: "10% 90%",
         end: "bottom top",
       },

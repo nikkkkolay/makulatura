@@ -16,25 +16,8 @@
   margin: 0 auto;
 }
 
-.shop {
-  max-width: 90rem;
-  margin: auto;
-}
-
-.shop h2 {
-  width: fit-content;
-  margin: 10rem auto 7.5rem;
-  text-align: center;
-}
-
 .feedback {
   margin: 8rem auto 6rem;
-}
-
-.cardList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: calc(var(--padding) / 1.5);
 }
 
 @media (max-width: 48rem) {
@@ -45,10 +28,6 @@
 
   .feedback {
     margin: 8rem auto 3.5rem;
-  }
-
-  .shop h2 {
-    margin: 6rem auto 3.5rem;
   }
 
   .intro {
