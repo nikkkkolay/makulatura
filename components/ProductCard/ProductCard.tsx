@@ -2,25 +2,25 @@ import { FC } from "react";
 import Image from "next/image";
 import { Button } from "@/components";
 import styles from "./ProductCard.module.css";
+import type { Product } from "@/types/product";
 
-type Props = {
-  name: string;
+type Props = Pick<Product, "name" | "type" | "description" | "ozonLink"> & {
   image: string;
-  type: "sticker" | "vertical-card" | "horizontal-card";
-  descriptrion: string;
 };
 
-export const ProductCard: FC<Props> = ({ name, image, type = "sticker", descriptrion }) => {
+export const ProductCard: FC<Props> = ({ name, ozonLink, image, type, description }) => {
   return (
-    <article className={styles.card}>
-      <h3>{name}</h3>
-      <figure>
-        <div className={`${styles.imgWrapper} ${styles[type]}`}>
-          <Image src={image} alt="" fill priority />
-        </div>
-        <figcaption>{descriptrion}</figcaption>
-      </figure>
-      <Button size="sm">Купить</Button>
-    </article>
+    <a href={ozonLink} className={styles.link} target="_blank">
+      <article className={styles.card}>
+        <h3>{name}</h3>
+        <figure>
+          <div className={`${styles.imgWrapper} ${styles[type]}`}>
+            <Image src={image} alt={name} fill priority />
+          </div>
+          <figcaption>{description}</figcaption>
+        </figure>
+        <Button size="sm">Купить</Button>
+      </article>
+    </a>
   );
 };

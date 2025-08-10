@@ -1,42 +1,29 @@
 import { ProductCard } from "../ProductCard/ProductCard";
 import styles from "./Shop.module.css";
+import type { ProductResponse } from "@/types/product";
 
-export const Shop = () => {
+export const Shop = async () => {
+  const response = await fetch(`${process.env.API}/api/stickers?populate=image`);
+  const productsResponse: ProductResponse = await response.json();
+
   return (
     <div className={styles.shop}>
       <h2>Магазинчик</h2>
-
       <div className={styles.cardList}>
-        <ProductCard
-          name="Лабубу"
-          type="vertical-card"
-          image="/1.png"
-          descriptrion="Наклейка на банковскую карту"
-        />
-        <ProductCard
-          name="Собачки-котики"
-          type="horizontal-card"
-          image="/5.png"
-          descriptrion="Наклейка на банковскую карту"
-        />
-        <ProductCard
-          name="Котики-слачки"
-          type="vertical-card"
-          image="/2.png"
-          descriptrion="Наклейка на банковскую карту"
-        />
-        <ProductCard
-          name="НЛО коты"
-          type="vertical-card"
-          image="/3.png"
-          descriptrion="Наклейка на банковскую карту"
-        />
-        <ProductCard
-          name="Пухля"
-          type="vertical-card"
-          image="/6.png"
-          descriptrion="Наклейка на банковскую карту"
-        />
+        {productsResponse.data.map((product) => {
+          const imageUrl = product.image[0]?.url || "";
+
+          return (
+            <ProductCard
+              key={product.documentId}
+              name={product.name}
+              type={product.type}
+              image={`${process.env.API}${imageUrl}`}
+              description={product.description}
+              ozonLink={product.ozonLink}
+            />
+          );
+        })}
       </div>
     </div>
   );
