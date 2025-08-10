@@ -12,50 +12,55 @@ export const Stickers = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const elements = containerRef.current?.querySelectorAll(`.${styles.sticker}`);
-    if (!elements) return;
+    if (!containerRef.current) return;
 
-    elements.forEach((el, index) => {
-      const rotation = index % 2 === 0 ? -15 : 15;
-      const fromX = index % 2 === 0 ? -100 : 100;
+    const elements = gsap.utils.toArray<HTMLElement>(`.${styles.sticker}`);
 
-      gsap.fromTo(
-        el,
-        {
-          x: fromX,
-          opacity: 0,
-          rotate: rotation,
-          zIndex: index + 1,
-        },
-        {
-          x: 0,
-          opacity: 1,
-          rotate: 0,
-          scrollTrigger: {
-            trigger: el,
-            start: `top ${80 - index * 5}%`,
-            toggleActions: "play none none none",
-            scrub: true,
-            markers: false,
-          },
-        }
-      );
+    elements.forEach((el, i) => {
+      gsap.set(el, {
+        x: i === 0 ? 0 : i % 2 === 0 ? -300 : 300,
+        opacity: i === 0 ? 1 : 0,
+        rotate: 0,
+        zIndex: i + 1,
+      });
+    });
+
+    gsap.to(elements, {
+      x: 0,
+      opacity: 1,
+      rotate: (i) => {
+        if (i === 0 || i === elements.length - 1) return 0;
+        const baseAngle = 4;
+        const sign = i % 2 === 0 ? -1 : 1;
+        return sign * baseAngle * i;
+      },
+      stagger: 0.5,
+      scrollTrigger: {
+        trigger: containerRef.current,
+        toggleActions: "play none play reverse",
+        start: "10% 90%",
+        end: "bottom top",
+      },
     });
   }, []);
 
   return (
     <div className={styles.stickers} ref={containerRef}>
       <div className={styles.sticker}>
-        <Image src="/Бэк1.png" alt="" fill />
+        <Image src="/Бэк4.png" alt="" fill />
       </div>
       <div className={styles.sticker}>
         <Image src="/Бэк2.png" alt="" fill />
       </div>
       <div className={styles.sticker}>
+        <Image src="/Бэк1.png" alt="" fill />
+      </div>
+
+      <div className={styles.sticker}>
         <Image src="/Бэк3.png" alt="" fill />
       </div>
-      <div className={styles.sticker}>
-        <Image src="/Бэк4.png" alt="" fill />
+      <div className={`${styles.sticker} ${styles.logo}`}>
+        <Image src="/logo.png" alt="" width={95} height={90} />
       </div>
     </div>
   );

@@ -6,20 +6,13 @@ export default function Home() {
   return (
     <>
       <Hero />
-
       <main className={styles.main}>
-        <section>
-          <Stickers />
-        </section>
-
-        <section>
-          <Intro
-            className={styles.intro}
-            text="Мы любим наклейки — просто потому, что это весело."
-          />
-          <hr />
-        </section>
-
+        <Stickers />
+        <Intro
+          className={styles.intro}
+          text="Мы любим наклейки — потому, что это весело и круто."
+        />
+        <hr />
         <section className={styles.shop} id="shop">
           <h2>Магазинчик</h2>
 

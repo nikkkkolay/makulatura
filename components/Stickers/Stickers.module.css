@@ -1,12 +1,37 @@
 .stickers {
+	position: relative;
 	margin: auto;
-	overflow-y: hidden;
+	min-height: 27.5rem;
 }
 
 .sticker {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	will-change: transform, opacity;
 	aspect-ratio: 137/216;
 	max-width: 280px;
 	margin: auto;
+	opacity: 0;
+}
+
+.logo img {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%
+}
+
+@media (max-width: 48rem) {
+
+	.stickers {
+		position: relative;
+		margin: auto;
+		min-height: 25rem;
+	}
+
+	.sticker {
+		max-width: 15.625rem;
+	}
 }

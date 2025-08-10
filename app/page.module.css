@@ -1,16 +1,18 @@
 .main {
   position: relative;
-  padding: 0 var(--padding);
+  padding: var(--padding) var(--padding) 0;
+  overflow: hidden;
 }
 
 .intro {
   margin: 8rem auto 8rem;
   text-align: center;
   max-width: 21em;
+  padding-top: var(--padding);
 }
 
 .intro+hr {
-  width: 30%;
+  width: 15%;
   margin: 0 auto;
 }
 
@@ -35,7 +37,7 @@
   gap: calc(var(--padding) / 1.5);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
   .intro {
     margin: 6rem auto 6rem;
@@ -47,5 +49,9 @@
 
   .shop h2 {
     margin: 6rem auto 3.5rem;
+  }
+
+  .intro {
+    padding-top: 0;
   }
 }

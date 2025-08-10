@@ -30,7 +30,6 @@ export const Intro: FC<Props> = ({ className, text }) => {
         trigger: containerRef.current,
         start: "top 80%",
         end: "bottom center",
-        scrub: 0.5,
       },
     });
 
