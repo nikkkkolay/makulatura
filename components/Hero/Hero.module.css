@@ -7,7 +7,7 @@
 .header h1 {
   position: relative;
   top: -0.4em;
-  font-size: var(--heading-xxl);
   width: 100%;
+  font-size: var(--heading-xxl);
   text-align: center;
 }

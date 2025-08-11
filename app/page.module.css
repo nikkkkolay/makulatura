@@ -5,10 +5,10 @@
 }
 
 .intro {
-  margin: 8rem auto 8rem;
-  text-align: center;
+  margin: 8rem auto;
   max-width: 21em;
   padding-top: var(--padding);
+  text-align: center;
 }
 
 .intro + hr {
@@ -20,16 +20,13 @@
   margin: 8rem auto 6rem;
 }
 
-@media (max-width: 48rem) {
+@media (width <= 48rem) {
   .intro {
-    margin: 6rem auto 6rem;
+    margin: 6rem auto;
+    padding-top: 0;
   }
 
   .feedback {
     margin: 8rem auto 3.5rem;
-  }
-
-  .intro {
-    padding-top: 0;
   }
 }

@@ -1,8 +1,8 @@
 .footer {
   display: flex;
+  padding: 0 var(--padding) var(--padding);
   flex-flow: column;
   gap: 0.6rem;
-  padding: 0 var(--padding) var(--padding);
 }
 
 .copyright {

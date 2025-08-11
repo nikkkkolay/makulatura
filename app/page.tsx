@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { ProductCard, Feedback, Intro, Hero, Stickers, Shop } from "@/components";
+import { Feedback, Intro, Hero, Stickers, Shop } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {

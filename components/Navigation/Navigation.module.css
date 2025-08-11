@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 .navigation {
   width: fit-content;
   height: fit-content;
@@ -13,9 +15,6 @@
 
 .navigation ul li a {
   display: flex;
-}
-
-.navigation ul li a {
   padding: 0.6em 0.4em;
   opacity: 1;
   text-decoration: none;

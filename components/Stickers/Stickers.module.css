@@ -7,23 +7,23 @@
 .sticker {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  will-change: transform, opacity;
+  left: 0;
+  margin: auto;
   aspect-ratio: 137/216;
   max-width: 280px;
-  margin: auto;
   opacity: 0;
+  will-change: transform, opacity;
 }
 
 .logo img {
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (max-width: 48rem) {
+@media (width <= 48rem) {
   .stickers {
     position: relative;
     margin: auto;
