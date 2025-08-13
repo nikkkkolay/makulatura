@@ -11,7 +11,6 @@ export default function Home() {
           className={styles.intro}
           text="Мы любим наклейки — потому, что это весело и круто."
         />
-        <hr />
         <section id="shop">
           <Shop />
         </section>
