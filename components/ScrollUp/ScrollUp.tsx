@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const ScrollUp = () => {
   const [hovered, setHovered] = useState(false);
-  const smileRef = useRef(null);
   const button = useRef(null);
 
   useEffect(() => {
@@ -19,7 +18,7 @@ export const ScrollUp = () => {
 
     if (!header) return;
 
-    gsap.to(smileRef.current, {
+    gsap.to(".smile-icon", {
       rotate: 360,
       scrollTrigger: {
         trigger: document.body,
@@ -61,8 +60,7 @@ export const ScrollUp = () => {
     >
       <span>
         <FaRegSmile
-          ref={smileRef}
-          className={styles.icon}
+          className={`${styles.icon} smile-icon`}
           style={{
             opacity: hovered ? 0 : 1,
           }}

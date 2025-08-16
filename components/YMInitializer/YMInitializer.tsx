@@ -4,12 +4,23 @@ import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 
+type YMFunction = (id: number, event: string, url: string) => void;
+
+declare global {
+  interface Window {
+    ym: YMFunction;
+  }
+}
+
 export function YMInitializer() {
   const pathName = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    ym(process.env.NEXT_PUBLIC_YMETRIKA_ID, "hit", window.location.href);
+    const id = Number(process.env.NEXT_PUBLIC_YMETRIKA_ID);
+    if (window.ym) {
+      window.ym(id, "hit", window.location.href);
+    }
   }, [pathName, searchParams]);
 
   return (
