@@ -1,13 +1,15 @@
 import type { NextConfig } from "next";
 
-const apiUrl = process.env.API || "http://localhost:1337";
-
 const nextConfig: NextConfig = {
   images: {
-    domains: [new URL(apiUrl).hostname],
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "1337",
+      },
+    ],
   },
 };
 
 export default nextConfig;
-
-console.log("API =", process.env.API);
