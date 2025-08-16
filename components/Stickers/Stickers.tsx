@@ -14,7 +14,7 @@ export const Stickers = () => {
   useEffect(() => {
     if (!containerRef.current) return;
 
-    const elements = gsap.utils.toArray<HTMLElement>(`.${styles.sticker}`);
+    const elements = gsap.utils.toArray<HTMLElement>(containerRef.current.children);
 
     gsap.set(elements, {
       x: (i) => (i === 0 ? 0 : i % 2 === 0 ? -300 : 300),
@@ -52,11 +52,10 @@ export const Stickers = () => {
       <div className={styles.sticker}>
         <Image src="/Бэк1.png" alt="" fill />
       </div>
-
       <div className={styles.sticker}>
         <Image src="/Бэк3.png" alt="" fill />
       </div>
-      <div className={`${styles.sticker} ${styles.logo}`}>
+      <div className={styles.logo}>
         <Image src="/logo.png" alt="" fill />
       </div>
     </div>
