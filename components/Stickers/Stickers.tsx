@@ -57,7 +57,7 @@ export const Stickers = () => {
         <Image src="/Бэк3.png" alt="" fill />
       </div>
       <div className={`${styles.sticker} ${styles.logo}`}>
-        <Image src="/logo.png" alt="" width={95} height={90} />
+        <Image src="/logo.png" alt="" fill />
       </div>
     </div>
   );

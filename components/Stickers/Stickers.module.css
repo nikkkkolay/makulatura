@@ -16,10 +16,13 @@
   will-change: transform, opacity;
 }
 
-.logo img {
+.logo {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 95px;
+  height: 90px;
+  margin: 0;
   transform: translate(-50%, -50%);
 }
 
