@@ -39,11 +39,9 @@
 }
 
 .submitMessage {
-  font-size: var(--text-sm);
   height: 1rem;
-
+  font-size: var(--text-sm);
   color: var(--green-dark);
-
   margin-left: 0.2rem;
   margin-top: 0.5rem;
 }

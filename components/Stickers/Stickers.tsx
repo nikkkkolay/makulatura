@@ -35,7 +35,7 @@ export const Stickers = () => {
       stagger: 0.5,
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "10% 90%",
+        start: "10% 70%",
         end: "bottom top",
       },
     });
