@@ -4,7 +4,9 @@ import styles from "./Shop.module.css";
 
 async function getProducts(): Promise<ProductResponse | null> {
   try {
-    const res = await fetch(`${process.env.API}/api/stickers?populate=image`);
+    const res = await fetch(`${process.env.API}/api/stickers?populate=image`, {
+      cache: "no-store",
+    });
 
     if (!res.ok) return null;
 
