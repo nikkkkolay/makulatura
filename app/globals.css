@@ -26,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(5.9375rem + var(--padding));
+  scroll-padding-top: calc(5rem + var(--padding));
 }
 
 body {
