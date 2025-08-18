@@ -71,12 +71,13 @@ export const Feedback: FC<Props> = ({ className }) => {
         disabled={status === "success"}
       />
 
-      {status === "success" && (
-        <p className={styles.submitMessage}>Спасибо! Сообщение отправлено!</p>
-      )}
-      {status === "error" && (
-        <p className={styles.submitMessage}>Ошибка при отправке. Попробуйте позже!</p>
-      )}
+      <p className={styles.submitMessage}>
+        {status === "success"
+          ? "Спасибо! Сообщение отправлено!"
+          : status === "error"
+            ? "Ошибка при отправке. Попробуйте позже!"
+            : ""}
+      </p>
 
       <div className={styles.formFooter}>
         <Button type="submit" size="sm" disabled={status === "success" || isSubmitting}>
